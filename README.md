@@ -40,6 +40,12 @@ In terms of hardware retrofitting we changed the entire old electronic by a simp
 
 ![docs/robot.png](docs/robot.png?raw=true "The robot used to emulate an industrial AGV")
 
+<p align="center">
+  <img width="460" height="300" src="docs/robot.png">
+</p>
+
+
+
 We have not an image of the final setup but we describe some of the new hardware parts that compose the final robot version. 
 
 
