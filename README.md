@@ -38,15 +38,23 @@ Here, we describe the hardware parts and software modules used and developed dur
 
 In terms of hardware retrofitting we changed the entire old electronic by a simpler and actual one (e.g. the usage of an Arduino to do the communication between the Joystick and the steering AC motor). One of the initial setups of the robot can be seen in the figure below:
 
-![docs/1_power_on.jpg](docs/robot.png?raw=true "The robot used to emulate an industrial AGV")
+![docs/robot.png](docs/robot.png?raw=true "The robot used to emulate an industrial AGV")
 
-We have not a final image of the final setup but we are going to describe some of the new hardware parts that compose the final robot version. 
+We have not an image of the final setup but we describe some of the new hardware parts that compose the final robot version. 
 
 
 Name  | Description/Function
 :---: | :---:
-DC/AC Inversor | Input 48 V Output: AC to power the Jetson.
-DC/DC Inversor | Input 12 V Output: 5V to power the arduino.
+DC/AC Inversor | Input 48 V, Output: AC. To power the Jetson.
+DC/DC Inversor | Input 12 V, Output: 5V. To power the arduino.
 Arduino |  To perform the communication between the remote controller and the AC motor.
-Jetson AGX Xavier  | To perform the DL computation.
+Jetson AGX Xavier  | To perform the DL computation and to ensure the ROS architecture running.
 Four Cameras | To acquire data.
+
+### Cameras
+
+The cameras used to acquire the images can be seen in the figure below:
+
+![docs/cameras.png](docs/cameras.png?raw=true "cameras")
+
+The [e-CAM130_CUXVR - Multiple Camera Board for NVIDIA® Jetson AGX Xavier™](https://www.e-consystems.com/nvidia-cameras/jetson-agx-xavier-cameras/four-synchronized-4k-cameras.asp) were conceived to acquire images with the board [Jetson AGX Xavier](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit).
