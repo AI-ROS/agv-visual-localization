@@ -5,11 +5,11 @@ Core packages for the Produtech Project
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
 - [Materials](#setup)
-  * [1: Hardware](#mat-hardware) 
-    * [Robot](#atlas-mv)
-    * [Cameras](#atlas-mv)
+  * [1: Hardware](#hardware) 
+    * [Robot](#robot)
+    * [Cameras](#cameras)
     * [Jetson AGX Xavier](#computer)
-  * [2: Software](#mat-software)
+  * [2: Software](#software)
     * [maxon_des](#maxon-des)
     * [ros-maxon-driver](#ros-maxon-driver)
     * [ros-panorama-package](#ros-panorama)
@@ -30,6 +30,12 @@ The system is composed of a small robot that emulates an industrial AGV and a se
 
 The setup of our robot is composed of two main parts: the hardware and the software. Regarding the hardware, we retrofitted the Atlas MV robot by disassembling the old robot and leaving only the interesting parts for the current project. Also, we renewed the existing software in terms of communication between the power chart and the engine. Finally, we built some of the novel core programming modules to perform the real-time self-robot localization.  
 
+## 1: Hardware
 
+### Robot
+
+In terms of hardware retrofitting we changed the entire old electronic by a simpler and actual one (e.g. the usage of an Arduino to do the communication between the Joystick and the steering AC motor). The initial setup of the robot can be seen in the figure below:
+
+![docs/1_power_on.jpg](docs/robot.png?raw=true "The robot used to emulate an industrial AGV")
 
 
