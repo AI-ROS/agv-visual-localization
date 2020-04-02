@@ -38,10 +38,8 @@ Here, we describe the hardware parts and software modules used and developed dur
 
 In terms of hardware retrofitting we changed the entire old electronic by a simpler and actual one (e.g. the usage of an Arduino to do the communication between the Joystick and the steering AC motor). One of the initial setups of the robot can be seen in the figure below:
 
-![docs/robot.png](docs/robot.png?raw=true "The robot used to emulate an industrial AGV")
-
 <p align="center">
-  <img width="460" height="300" src="docs/robot.png">
+  <img width="620" height="543" src="docs/robot.png">
 </p>
 
 
