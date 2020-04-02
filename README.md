@@ -59,6 +59,8 @@ Four Cameras | To acquire data.
 
 The cameras used to acquire the images can be seen in the figure below:
 
-![docs/cameras_xavier.png](docs/cameras_xavier.png?raw=true "cameras")
+<p align="center">
+  <img width="257" height="377" src="docs/cameras_xavier.png">
+</p>
 
-The [e-CAM130_CUXVR - Multiple Camera Board for NVIDIA® Jetson AGX Xavier™](https://www.e-consystems.com/nvidia-cameras/jetson-agx-xavier-cameras/four-synchronized-4k-cameras.asp) were conceived to acquire images with the board [Jetson AGX Xavier](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit).
+The [e-CAM130_CUXVR - Multiple Camera Board](https://www.e-consystems.com/nvidia-cameras/jetson-agx-xavier-cameras/four-synchronized-4k-cameras.asp) were conceived to acquire images with the board [NVIDIA® Jetson AGX Xavier™](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit).
