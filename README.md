@@ -23,7 +23,7 @@ Core packages for the Produtech Project
 # Overview
 
 One of the branches of the Produtech II SIF 24541 project is the T.6.3.3 - Development of a flexible and low-cost localization and navigation system for PPS6. So, we aim to develop the core features of a visual-based navigation system. 
-The system is composed of a small robot that emulates an industrial AGV and a set of programs. This robotic system would be able to detect landmarks (encoded Data Matrix), which are spread in the environment trying to create a constellation in such a way that several of them are always visible to a set of cameras onboard the robot or AGV. These markers are encoded with their location relative to a known reference. Then, the robot localization can be computed by applying triangulation and trilateration techniques. 
+The system is composed of a small robot controlled through a remote controller) that emulates an industrial AGV and a set of programs. This robotic system would be able to detect landmarks (encoded Data Matrix), which are spread in the environment trying to create a constellation in such a way that several of them are always visible to a set of cameras onboard the robot or AGV. These markers are encoded with their location relative to a known reference. Then, the robot localization can be computed by applying triangulation and trilateration techniques. 
 
 
 # Setup 
@@ -32,10 +32,21 @@ The setup of our robot is composed of two main parts: the hardware and the softw
 
 ## 1: Hardware
 
+Here, we describe the hardware parts and software modules used and developed during this project.
+
 ### Robot
 
-In terms of hardware retrofitting we changed the entire old electronic by a simpler and actual one (e.g. the usage of an Arduino to do the communication between the Joystick and the steering AC motor). The initial setup of the robot can be seen in the figure below:
+In terms of hardware retrofitting we changed the entire old electronic by a simpler and actual one (e.g. the usage of an Arduino to do the communication between the Joystick and the steering AC motor). One of the initial setups of the robot can be seen in the figure below:
 
 ![docs/1_power_on.jpg](docs/robot.png?raw=true "The robot used to emulate an industrial AGV")
 
+We have not a final image of the final setup but we are going to describe some of the new hardware parts that compose the final robot version. 
 
+
+Name  | Description/Function
+:---: | :---:
+DC/AC Inversor | Input 48 V Output: AC to power the Jetson.
+DC/DC Inversor | Input 12 V Output: 5V to power the arduino.
+Arduino |  To perform the communication between the remote controller and the AC motor.
+Jetson AGX Xavier  | To perform the DL computation.
+Four Cameras | To acquire data.
