@@ -6,12 +6,12 @@ Core packages for the Produtech Project
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
 - [Setup](#setup)
-  - [1: Hardware](#1-hardware)
+  - [Hardware](#hardware) 
     - [Robot](#robot)
     - [Cameras](#cameras)
     - [Jetson AGX Xavier](#jetson-agx-xavier)
-  - [2: Software](#2-software)
-    - [maxon_des](#maxondes)
+  * [Software](#software)
+    - [maxon_des](#maxon_des)
     - [ros-maxon-driver](#ros-maxon-driver)
     - [ros-panorama-package](#ros-panorama-package)
     - [faster-rcnn-data-matrix](#faster-rcnn-data-matrix)
@@ -21,6 +21,8 @@ Core packages for the Produtech Project
   - [Lack of Deepstream-ROS interaction](#lack-of-deepstream-ros-interaction)
 - [Publications](#publications)
 - [Current Work](#current-work)
+  * [Object Detection](#object-detection)
+
 
 # Overview
 
@@ -31,7 +33,7 @@ The prototyping system is composed of a small robot controlled through a remote 
 
 The setup of our robot is composed of two main parts: the hardware and the software. Regarding the hardware, the retrofitting of the Atlas MV robot consisted of disassembling the old robot and leaving only the interesting parts for the current project. Also, the existing software in terms of communication between the power chart and the engine was renewed. Finally, some of the novel core programming modules were built to perform the real-time self-robot localization.
 
-## 1: Hardware
+## Hardware
 
 Here, the hardware parts and software modules used and developed during this project are described.
 
@@ -71,7 +73,7 @@ The [e-CAM130_CUXVR - Multiple Camera Board](https://www.e-consystems.com/nvidia
 
 This board enables the creation of AI applications mainly based on Deep Learning by incorporating 512-core Volta GPU with Tensor Cores and (2x) NVDLA Engines. The NVIDIA [Jetpack 4.2](https://developer.nvidia.com/jetpack-4_2) and the [DeepStream SDK 4.0](https://docs.nvidia.com/metropolis/deepstream/4.0/dev-guide/DeepStream_Development_Guide/baggage/index.html) were installed in this board to provide the software SDK required for this project (for example, the OpenCV library).
 
-## 2: Software
+## Software
 
 Now, the set of software modules developed in this project are presented, from the low-level up to the high-level entire system.
 
