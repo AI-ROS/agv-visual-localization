@@ -22,21 +22,20 @@ Core packages for the Produtech Project
 
 # Overview
 
-One of the branches of the Produtech II SIF 24541 project is the T.6.3.3 - Development of a flexible and low-cost localization and navigation system for PPS6. So, we aim to develop the core features of a visual-based navigation system. 
+One of the branches of the Produtech II SIF 24541 project is the T.6.3.3 - Development of a flexible and low-cost localization and navigation system for PPS6. So, the aim is to develop the core features of a visual-based navigation system. 
 The system is composed of a small robot controlled through a remote controller) that emulates an industrial AGV and a set of programs. This robotic system would be able to detect landmarks (encoded Data Matrix), which are spread in the environment trying to create a constellation in such a way that several of them are always visible to a set of cameras onboard the robot or AGV. These markers are encoded with their location relative to a known reference. Then, the robot localization can be computed by applying triangulation and trilateration techniques. 
 
 
 # Setup 
 
-The setup of our robot is composed of two main parts: the hardware and the software. Regarding the hardware, we retrofitted the Atlas MV robot by disassembling the old robot and leaving only the interesting parts for the current project. Also, we renewed the existing software in terms of communication between the power chart and the engine. Finally, we built some of the novel core programming modules to perform the real-time self-robot localization.  
-
+The setup of our robot is composed of two main parts: the hardware and the software. Regarding the hardware, the retrofitting of the Atlas MV robot consisted of disassembling the old robot and leaving only the interesting parts for the current project. Also, the existing software in terms of communication between the power chart and the engine was renewed. Finally, some of the novel core programming modules to perform the real-time self-robot localization were built. 
 ## 1: Hardware
 
-Here, we describe the hardware parts and software modules used and developed during this project.
+Here, the hardware parts and software modules used and developed during this project are described.
 
 ### Robot
 
-In terms of hardware retrofitting we changed the entire old electronic by a simpler and actual one (e.g. the usage of an Arduino to do the communication between the Joystick and the steering AC motor). One of the initial setups of the robot can be seen in the figure below:
+In terms of hardware retrofitting the entire old electronic was changed by a simpler and actual one (e.g. the usage of an Arduino to do the communication between the Joystick and the steering AC motor). One of the initial setups of the robot can be seen in the figure below:
 
 <p align="center">
   <img width="620" height="543" src="docs/robot.png">
@@ -44,7 +43,7 @@ In terms of hardware retrofitting we changed the entire old electronic by a simp
 
 
 
-We have not an image of the final setup but we describe some of the new hardware parts that compose the final robot version. 
+It is not possible to show an image of the final setup but some of the new hardware parts that compose the final robot version are described in the table below. 
 
 
 Name  | Description/Function
@@ -72,7 +71,7 @@ This board enables the creation of AI applications mainly based on Deep Learning
 
 ## 2: Software
 
-Now, we are going to present the set of software modules developed in this project, from the low-level up to the high-level entire system.
+Now, the set of software modules developed in this project are presented, from the low-level up to the high-level entire system.
 
 ### maxon_des
 
