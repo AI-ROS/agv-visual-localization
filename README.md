@@ -50,8 +50,8 @@ We have not an image of the final setup but we describe some of the new hardware
 Name  | Description/Function
 :---: | :---:
 DC/AC Inversor | Input 48 V, Output: AC. To power the Jetson.
-DC/DC Inversor | Input 12 V, Output: 5V. To power the arduino.
-Arduino |  To perform the communication between the remote controller and the AC motor.
+DC/DC Inversor | Input 12 V, Output: 5V. To power the Arduino.
+Arduino | To perform the communication between the remote controller and the AC motor.
 Jetson AGX Xavier  | To perform the DL computation and to ensure the ROS architecture running.
 Four Cameras | To acquire data.
 
@@ -69,3 +69,16 @@ The [e-CAM130_CUXVR - Multiple Camera Board](https://www.e-consystems.com/nvidia
 ### Jetson AGX Xavier
 
 This board enables the creation of AI applications mainly based on Deep Learning by incorporating 512-core Volta GPU with Tensor Cores and (2x) NVDLA Engines. On this board is installed the Nvidia [Jetpack 4.2](https://developer.nvidia.com/jetpack-4_2) and the [DeepStream SDK 4.0](https://docs.nvidia.com/metropolis/deepstream/4.0/dev-guide/DeepStream_Development_Guide/baggage/index.html). 
+
+## 2: Software
+
+Now, we are going to present the set of software modules developed in this project, from the low-level up to the high-level entire system.
+
+### maxon_des
+
+This is a library of functions to communicate with the [Maxon DES 70/10](https://www.maxongroup.com/maxon/view/product/228597) power chart. These set of functions includes:
+* Status functions - Functions that allow checking the board status, list errors, clear those errors or reset/enable the board.
+* Parameters functions - Functions to read and set some of the "static" paramters. 
+* Setting functions -  Functions to set the current, (motor) velocity and stop the motor motion.
+
+Resources: [repository](https://github.com/tmralmeida/maxon_des)
