@@ -1,2 +1,27 @@
 # Produtech
 Core packages for the Produtech Project
+
+# Table of Contents
+- [Overview](#produtech)
+- [Table of Contents](#table-of-contents)
+- [Materials](#setup)
+  * [1: Hardware](#mat-hardware) 
+    * [Robot] (#atlas-mv)
+    * [Cameras] (#atlas-mv)
+    * [Jetson AGX Xavier] (#computer)
+  * [2: Software](#mat-software)
+    * [maxon_des](#maxon-des)
+    * [ros-maxon-driver](#ros-maxon-driver)
+    * [ros-panorama-package](#ros-panorama)
+    * [faster-rcnn-data-matrix](#data-matrix-detection)
+    * [deep-stream-application](#deepstream-app)
+- [Known problems](#known-problems)
+  * [High latency on the panorama image creation](#panorama-problem)
+- [Publications](#publications)
+- [Future Work](#future-work)
+
+# Overview
+
+One of the branches of the Produtech II SIF 24541 project is the T.6.3.3 - Development of a flexible and low-cost localization and navigation system for PPS6. So, we aim to develop the core features of a visual-based navigation system. 
+The system is composed of a small robot that emulates an industrial AGV. This robotic system would be able to detect landmarks (encoded Data Matrix), which are spread in the environment trying to create a constellation in such a way that several of them are always visible to a set of cameras onboard the robot or AGV. These markers are encoded with their location relative to a known reference. Then, the robot localization can be computed by applying triangulation and trilateration techniques. 
+
