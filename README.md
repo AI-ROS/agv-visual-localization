@@ -144,4 +144,4 @@ Colaborators: [object detection](https://github.com/tmralmeida) and [road segmen
 * [ ] Faster RCNN
 * [ ] SSD
 
-## Road/Lane Segmentation
+## Road Segmentation
