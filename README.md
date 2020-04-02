@@ -8,7 +8,7 @@ Core packages for the Produtech Project
   * [1: Hardware](#hardware) 
     * [Robot](#robot)
     * [Cameras](#cameras)
-    * [Jetson AGX Xavier](#computer)
+    * [Jetson AGX Xavier](#jetson-agx-xavier)
   * [2: Software](#software)
     * [maxon_des](#maxon-des)
     * [ros-maxon-driver](#ros-maxon-driver)
