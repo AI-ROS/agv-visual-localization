@@ -21,6 +21,7 @@ Core packages for the Produtech Project
 - [Publications](#publications)
 - [Current Work](#current-work)
   * [Object Detection](#object-detection)
+  * [Road Segmentation](#road-segmentation)
 
 
 # Overview
@@ -146,3 +147,4 @@ Colaborators: [object detection](https://github.com/tmralmeida) and [road segmen
 * [ ] Faster RCNN
 * [ ] SSD
 
+## Road/Lane Segmentation
