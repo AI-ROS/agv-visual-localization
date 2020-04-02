@@ -5,11 +5,11 @@ Core packages for the Produtech Project
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
 - [Setup](#setup)
-  * [1: Hardware](#1:-hardware) 
+  * [Hardware](#hardware) 
     * [Robot](#robot)
     * [Cameras](#cameras)
     * [Jetson AGX Xavier](#jetson-agx-xavier)
-  * [2: Software](#2:-software)
+  * [Software](#software)
     * [maxon_des](#maxon_des)
     * [ros-maxon-driver](#ros-maxon-driver)
     * [ros-panorama-package](#ros-panorama-package)
@@ -20,6 +20,9 @@ Core packages for the Produtech Project
   * [Lack of Deepstream-ROS interaction](#Lack-of-Deepstream-ROS-interaction)
 - [Publications](#publications)
 - [Current Work](#current-work)
+  * [Object Detection](#object-detection)
+    * [x]Faster RCNN
+    * [x]SSD
 
 # Overview
 
@@ -139,3 +142,6 @@ The COVID-19 pandemic brought this work to a halt (due to the impossibility of c
 Resources: 
 
 Colaborators: [object detection](https://github.com/tmralmeida) and [road segmentation](https://github.com/bernardomig) 
+
+## Object Detection
+
