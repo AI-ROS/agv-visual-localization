@@ -1,5 +1,5 @@
 # Produtech
-Core packages for the Produtech Project
+Core packages for the Produtech Project (Under construction)
 
 # Table of Contents
 - [Overview](#overview)
@@ -135,9 +135,6 @@ There is no bridge between ROS and deepstream at the time of this repo. Then, th
 # Current Work
 
 The COVID-19 pandemic brought this work to a halt (due to the impossibility of contact with the robot), but enabled the development of other type of works on the field of autonomous driving (and connected with the AGV system). So, this work will be extended to autonomous driving applications. Therefore, it is going to be developed the visual perception of road agents/objects based on DL ROS nodes. Mainly the two cruacial objectives is to deploy a unified representation of the road/lanes segmentation and object detection.
-
-
-
 
 Resources: 
 
