@@ -33,7 +33,7 @@ The system is composed of a small robot controlled through a remote controller) 
 # Setup 
 
 The setup of our robot is composed of two main parts: the hardware and the software. Regarding the hardware, the retrofitting of the Atlas MV robot consisted of disassembling the old robot and leaving only the interesting parts for the current project. Also, the existing software in terms of communication between the power chart and the engine was renewed. Finally, some of the novel core programming modules to perform the real-time self-robot localization were built. 
-## 1: Hardware
+## Hardware
 
 Here, the hardware parts and software modules used and developed during this project are described.
 
@@ -73,7 +73,7 @@ The [e-CAM130_CUXVR - Multiple Camera Board](https://www.e-consystems.com/nvidia
 
 This board enables the creation of AI applications mainly based on Deep Learning by incorporating 512-core Volta GPU with Tensor Cores and (2x) NVDLA Engines. On this board is installed the NVIDIA [Jetpack 4.2](https://developer.nvidia.com/jetpack-4_2) and the [DeepStream SDK 4.0](https://docs.nvidia.com/metropolis/deepstream/4.0/dev-guide/DeepStream_Development_Guide/baggage/index.html). 
 
-## 2: Software
+## Software
 
 Now, the set of software modules developed in this project are presented, from the low-level up to the high-level entire system.
 
@@ -138,7 +138,7 @@ The COVID-19 pandemic brought this work to a halt (due to the impossibility of c
 
 Resources: 
 
-Colaborators: [object detection](https://github.com/tmralmeida) and [road segmentation](https://github.com/bernardomig) 
+Colaborators: [tmralmeida](https://github.com/tmralmeida) and [bernardomig](https://github.com/bernardomig) 
 
 ## Object Detection
 * [ ] Faster RCNN
