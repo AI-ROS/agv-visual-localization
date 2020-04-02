@@ -21,8 +21,7 @@ Core packages for the Produtech Project
 - [Publications](#publications)
 - [Current Work](#current-work)
   * [Object Detection](#object-detection)
-    * [x]Faster RCNN
-    * [x]SSD
+
 
 # Overview
 
@@ -144,4 +143,6 @@ Resources:
 Colaborators: [object detection](https://github.com/tmralmeida) and [road segmentation](https://github.com/bernardomig) 
 
 ## Object Detection
+* [x]Faster RCNN
+* [x]SSD
 
