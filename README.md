@@ -127,7 +127,7 @@ There is no bridge between ROS and deepstream at the time of this repo. Then, th
 
 # Publications
 
-[Detection of Data Matrix Encoded Landmarks in Unstructured Environments using Deep Learning] - available soon the url
+[Detection of Data Matrix Encoded Landmarks in Unstructured Environments using Deep Learning] - url available soon  
 
 # Current Work
 
