@@ -81,4 +81,5 @@ This is a library of functions to communicate with the [Maxon DES 70/10](https:/
 * Setting functions -  Functions to set the current, (motor) velocity and stop the motor motion.
 
 Resources: [REPO](https://github.com/tmralmeida/maxon_des)
+
 Colaborators: [tmralmeida](https://github.com/tmralmeida) and [bernardomig](https://github.com/bernardomig) 
