@@ -4,7 +4,7 @@ Core packages for the Produtech Project
 # Table of Contents
 - [Overview](#overview)
 - [Table of Contents](#table-of-contents)
-- [Materials](#setup)
+- [Setup](#setup)
   * [1: Hardware](#hardware) 
     * [Robot](#robot)
     * [Cameras](#cameras)
@@ -63,4 +63,4 @@ The cameras used to acquire the images can be seen in the figure below:
   <img width="257" height="377" src="docs/cameras_xavier.png">
 </p>
 
-The [e-CAM130_CUXVR - Multiple Camera Board](https://www.e-consystems.com/nvidia-cameras/jetson-agx-xavier-cameras/four-synchronized-4k-cameras.asp) were conceived to acquire images with the board [NVIDIA® Jetson AGX Xavier™](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit).
+The [e-CAM130_CUXVR - Multiple Camera Board](https://www.e-consystems.com/nvidia-cameras/jetson-agx-xavier-cameras/four-synchronized-4k-cameras.asp) were conceived to acquire images with the [NVIDIA® Jetson AGX Xavier™](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit) board.
