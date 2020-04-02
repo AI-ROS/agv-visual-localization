@@ -135,9 +135,11 @@ There is no bridge between ROS and Deepstream at the time of this repo. Therefor
 
 The COVID-19 pandemic brought this work to a halt (due to the impossibility of contact with the robot), but enabled the development of another type of research on the field of autonomous driving (and connected with the AGV system). So, this work will be extended to autonomous driving applications. The visual perception of road agents/objects, based on DL ROS nodes, are going to be developed in the near future. Mainly, the two crucial objectives are to deploy a unified representation of the road/lanes segmentation and object detection.
 
-Resources: 
-
-Research Topics:
+Colaborators:
 
 * Object Detection: [tmralmeida](https://github.com/tmralmeida)
 * Semantic Segmentation for Road Detection: [bernardomig](https://github.com/bernardomig)
+
+## Object Detection
+* [ ] Faster RCNN
+* [ ] SSD
