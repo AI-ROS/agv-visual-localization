@@ -83,3 +83,9 @@ This is a library of functions to communicate with the [Maxon DES 70/10](https:/
 Resources: [REPO](https://github.com/tmralmeida/maxon_des)
 
 Colaborators: [tmralmeida](https://github.com/tmralmeida) and [bernardomig](https://github.com/bernardomig) 
+
+### ros-maxon-driver
+
+This is the ROS driver to use those functions through ROS-melodic framework. This driver translates the joystick inputs into the respective function call.
+
+Resources: [REPO](https://github.com/tmralmeida/ros-maxon-driver)
