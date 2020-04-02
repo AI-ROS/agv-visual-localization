@@ -21,8 +21,8 @@ Core packages for the Produtech Project
 - [Publications](#publications)
 - [Current Work](#current-work)
   * [Object Detection](#object-detection)
-    * [x]Faster RCNN
-    * [x]SSD
+    * [x]Faster RCNN(#faster-rcnn)
+    * [x]SSD(#ssd)
 
 # Overview
 
