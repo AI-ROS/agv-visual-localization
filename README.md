@@ -12,9 +12,9 @@ Core packages for the Produtech Project
   * [2: Software](#software)
     * [maxon_des](#maxon_des)
     * [ros-maxon-driver](#ros-maxon-driver)
-    * [ros-panorama-package](#ros-panorama)
-    * [faster-rcnn-data-matrix](#data-matrix-detection)
-    * [deep-stream-application](#deepstream-app)
+    * [ros-panorama-package](#ros-panorama-package)
+    * [faster-rcnn-data-matrix](#faster-rcnn-data-matrix)
+    * [deepstream-application](#deepstream-application)
 - [Known problems](#known-problems)
   * [High latency on the panorama image creation](#panorama-problem)
 - [Publications](#publications)
@@ -86,6 +86,27 @@ Colaborators: [tmralmeida](https://github.com/tmralmeida) and [bernardomig](http
 
 ### ros-maxon-driver
 
-This is the ROS driver to use those functions through ROS-melodic framework. This driver translates the joystick inputs into the respective function call.
+This is the ROS driver to use those functions on the ROS-melodic framework. This driver translates the joystick inputs into the respective function call.
 
 Resources: [REPO](https://github.com/tmralmeida/ros-maxon-driver)
+
+### ros-panorama-package
+
+Initally, the idea was to build a panorama image of the scenario through 3 input images. Then, pass the panorama image forward a Deep Neural Network that returns the location of the Data Matrix in the image. In order to compute this panorama image a ROS package was created.
+This package was created based on the [OpenCV PImage Stitching Project](https://www.pyimagesearch.com/2016/01/25/real-time-panorama-and-image-stitching-with-opencv/).
+
+Resources: [REPO](https://github.com/tmralmeida/ros-panorama-package)
+
+### faster-rcnn-data-matrix
+
+This is a proof-of-concept notebook consisting of the entire training/testing pipeline of the FasterRCNN model through the [Detectron2](https://github.com/tmralmeida/detectron2) platform. To do so, the Dataset was manually created through the [labelbox](https://labelbox.com/) application.
+
+Resources: [REPO](https://github.com/tmralmeida/faster-rcnn-data-matrix)
+
+### deepstream-application
+
+Finally, the board used in this project - Jetson AGX Xavier - allowed the study of other type of architectures to process the input images. The DeepStream framework delivers a complete streaming analytics toolkit for AI-based video and image understanding, as well as multi-sensor processing. Therefore, this SDK enables the real-time inference through DNN, based on ONNX/Tensor RT inference optimization libraries.
+
+Thus, a deepstream application was also developed based on those that were provided by Nvidia. This application is a pipeline whose input is on image that then passes forward on the YoloV3 architecture. This object detection model outputs the bounding boxes o the respective objects in the scene.
+
+Resources: [REPO]
