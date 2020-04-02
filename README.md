@@ -14,7 +14,7 @@ Core packages for the Produtech Project (Under construction)
     * [ros-maxon-driver](#ros-maxon-driver)
     * [ros-panorama-package](#ros-panorama-package)
     * [faster-rcnn-data-matrix](#faster-rcnn-data-matrix)
-    * [deepstream-application](#deepstream-application)
+    * [deepstream-app](#deepstream-app)
 - [Known problems](#known-problems)
   * [High latency on the panorama image creation](#high-latency-on-the-panorama-image-creation)
   * [Lack of Deepstream-ROS interaction](#lack-of-deepstream-ros-interaction)
@@ -109,13 +109,13 @@ This is a proof-of-concept notebook consisting of the entire training/testing pi
 
 Resources: [REPO](https://github.com/tmralmeida/faster-rcnn-data-matrix)
 
-### deepstream-application
+### deepstream-app
 
 Finally, the board used in this project - Jetson AGX Xavier - allowed the study of another type of architectures to process the input images. The DeepStream framework delivers a complete streaming analytics toolkit for AI-based video and image understanding, as well as multi-sensor processing. Therefore, this SDK enables real-time inference through DNN, based on ONNX and Tensor RT libraries.
 
-Thus, a DeepStream application was also developed based on those that were provided by NVIDIA. This application is a pipeline whose input is one image that then passes forward on the YoloV3 architecture. This object detection model outputs the bounding boxes of the respective objects in the scene.
+Thus, two DeepStream applications were also developed based on those that were provided by NVIDIA. These applications are pipelines whose input is one image that then passes forward on the YoloV3 architecture (in one of the applications a classical tracker is also used). This object detection model outputs the bounding boxes of the respective objects in the scene.
 
-Resources: [REPO]
+Resources: [REPO](https://github.com/tmralmeida/deepstream-app)
 
 # Known problems
 
