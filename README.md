@@ -10,7 +10,7 @@ Core packages for the Produtech Project
     * [Cameras](#cameras)
     * [Jetson AGX Xavier](#jetson-agx-xavier)
   * [2: Software](#software)
-    * [maxon_des](#maxon-des)
+    * [maxon_des](#maxon_des)
     * [ros-maxon-driver](#ros-maxon-driver)
     * [ros-panorama-package](#ros-panorama)
     * [faster-rcnn-data-matrix](#data-matrix-detection)
@@ -75,9 +75,10 @@ Now, the set of software modules developed in this project are presented, from t
 
 ### maxon_des
 
-This is a library of functions to communicate with the [Maxon DES 70/10](https://www.maxongroup.com/maxon/view/product/228597) power chart. These set of functions includes:
-* Status functions - Functions that allow checking the board status, list errors, clear those errors or reset/enable the board.
+This is a library of functions to communicate with the [Maxon DES 70/10](https://www.maxongroup.com/maxon/view/product/228597) power chart. This set of functions includes:
+* Status functions - Functions that allow checking the board status, list errors, clear these errors or reset/enable the board.
 * Parameters functions - Functions to read and set some of the "static" paramters. 
 * Setting functions -  Functions to set the current, (motor) velocity and stop the motor motion.
 
-Resources: [repository](https://github.com/tmralmeida/maxon_des)
+Resources: [REPO](https://github.com/tmralmeida/maxon_des)
+Colaborators: [tmralmeida](https://github.com/tmralmeida) and [bernardomig](https://github.com/bernardomig) 
