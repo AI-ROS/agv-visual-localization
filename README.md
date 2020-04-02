@@ -143,6 +143,6 @@ Resources:
 Colaborators: [object detection](https://github.com/tmralmeida) and [road segmentation](https://github.com/bernardomig) 
 
 ## Object Detection
-* [x]Faster RCNN
-* [x]SSD
+* [ ]Faster RCNN
+* [ ]SSD
 
