@@ -1,5 +1,5 @@
-# Produtech
-Core packages for the Produtech Project (Under construction)
+# agv-visual-localization
+Core packages for the Produtech Project, where, initially, the object is to build an AGV capable of getting its own localization based on Artificial Vision  (Under construction)
 
 # Table of Contents
 - [Overview](#overview)
