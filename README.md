@@ -141,7 +141,7 @@ The COVID-19 pandemic brought this work to a halt (due to the impossibility of c
 Colaborators: 
 
 * Object Detction: [tmralmeida](https://github.com/tmralmeida) 
-* Semantic Segmentaion: [bernardomig](https://github.com/bernardomig) 
+* Semantic Segmentation: [bernardomig](https://github.com/bernardomig) 
 
 ## Object Detection
 * [ ] Faster RCNN
