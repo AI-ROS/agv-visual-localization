@@ -117,7 +117,7 @@ Thus, two DeepStream applications were also developed based on those that were p
 
 Resources: [REPO](https://github.com/tmralmeida/deepstream-app)
 
-# Known problems
+# Known problems :warning:
 
 In this section, the problems inherent to any part of the work are presented.
 
@@ -144,7 +144,7 @@ Colaborators:
 * Semantic Segmentation: [bernardomig](https://github.com/bernardomig) 
 
 ## Object Detection
-* [ ] Faster RCNN
-* [ ] SSD
+* [:heavy_check_mark:] Faster RCNN
+* [:heavy_check_mark:] SSD
 
 ## Semantic Segmentation
