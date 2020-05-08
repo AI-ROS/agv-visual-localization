@@ -145,11 +145,11 @@ Colaborators:
 
 ## Object Detection
 
-The object detection models deployed in this project were trained on the [BDD100k](https://bair.berkeley.edu/blog/2018/05/30/bdd/) dataset. Several developers have already developed these models, so what is presented here are approaches based on those developed by these authors.
+The object detection models deployed in this project were trained on the [BDD100k](https://bair.berkeley.edu/blog/2018/05/30/bdd/) dataset. Several developers have already implemented these models, so what is presented here are approaches based on those developed by these authors.
 
 Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2-Object_Detection/scripts)
 
-* Faster RCNN :heavy_check_mark:
+* **Faster RCNN** :heavy_check_mark:
 
   Faster RCNN is one of the most widely used deep learning models for object detection. Although, its high-latency comparing to single-shot methods, Faster RCNN is performant detecting both small and large objects. The [authors](https://arxiv.org/abs/1506.01497) of this DL architecture divide the overall architecture into 2 modules, however, it is fairer to divide it into 3 modules:
 
