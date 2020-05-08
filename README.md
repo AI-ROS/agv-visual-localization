@@ -144,8 +144,8 @@ Colaborators:
 * Semantic Segmentation: [bernardomig](https://github.com/bernardomig) 
 
 ## Object Detection
-* []:heavy_check_mark:] Faster RCNN
-* [:heavy_check_mark:] SSD
-* [:x:] YOLOV4
+* Faster RCNN :heavy_check_mark:
+* SSD :heavy_check_mark: 
+* YOLOV4 :x: 
 
 ## Semantic Segmentation
