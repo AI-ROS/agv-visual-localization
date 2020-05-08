@@ -1,5 +1,5 @@
-# Produtech
-Core packages for the Produtech Project (Under construction)
+# agv-visual-localization
+Core packages for the Produtech Project, where, initially, the objective is to build an AGV capable of getting its own localization based on Artificial Vision  (Under construction)
 
 # Table of Contents
 - [Overview](#overview)
@@ -141,7 +141,7 @@ The COVID-19 pandemic brought this work to a halt (due to the impossibility of c
 Colaborators: 
 
 * Object Detction: [tmralmeida](https://github.com/tmralmeida) 
-* Semantic Segmenation: [bernardomig](https://github.com/bernardomig) 
+* Semantic Segmentation: [bernardomig](https://github.com/bernardomig) 
 
 ## Object Detection
 * [ ] Faster RCNN
