@@ -165,18 +165,18 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
 
   |       Metric             |  IoU Threshold  |  Scales  |  maxDets  | AP/AR values |
   | :----------------------: | :-------------: | :------: | :-------: | :----------: |
-  | Average Precision  (AP)  |  IoU=0.50:0.95  |     all  |    100    |     0.193    |
-  | Average Precision  (AP)  |  IoU=0.50       |     all  |    100    |     0.350    |
-  | Average Precision  (AP)  |  IoU=0.75       |     all  |    100    |     0.224    |
-  | Average Precision  (AP)  |  IoU=0.50:0.95  |   small  |    100    |     0.085    |
-  | Average Precision  (AP)  |  IoU=0.50:0.95  |  medium  |    100    |     0.683    |
-  | Average Precision  (AP)  |  IoU=0.50:0.95  |   large  |    100    |     1.000    |
-  | Average Recall     (AR)  |  IoU=0.50:0.95  |     all  |      1    |     0.035    |
-  | Average Recall     (AR)  |  IoU=0.50:0.95  |     all  |     10    |     0.189    |
-  | Average Recall     (AR)  |  IoU=0.50:0.95  |     all  |    100    |     0.212    |
-  | Average Recall     (AR)  |  IoU=0.50:0.95  |   small  |    100    |     0.117    |
-  | Average Recall     (AR)  |  IoU=0.50:0.95  |  medium  |    100    |     0.709    |
-  | Average Recall     (AR)  |  IoU=0.50:0.95  |   large  |    100    |     1.000    |
+  | Average Precision  (AP)  |     0.50:0.95   |     all  |    100    |     0.193    |
+  | Average Precision  (AP)  |     0.50        |     all  |    100    |     0.350    |
+  | Average Precision  (AP)  |     0.75        |     all  |    100    |     0.224    |
+  | Average Precision  (AP)  |     0.50:0.95   |   small  |    100    |     0.085    |
+  | Average Precision  (AP)  |     0.50:0.95   |  medium  |    100    |     0.683    |
+  | Average Precision  (AP)  |     0.50:0.95   |   large  |    100    |     1.000    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |      1    |     0.035    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |     10    |     0.189    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |    100    |     0.212    |
+  | Average Recall     (AR)  |     0.50:0.95   |   small  |    100    |     0.117    |
+  | Average Recall     (AR)  |     0.50:0.95   |  medium  |    100    |     0.709    |
+  | Average Recall     (AR)  |     0.50:0.95   |   large  |    100    |     1.000    |
 
 
   Visual results on our roads: [video1](https://www.youtube.com/watch?v=mNZJJlK3pHM&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=2) and [video2](https://www.youtube.com/watch?v=o7KSFDoEfW0&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=3)
