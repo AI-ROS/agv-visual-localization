@@ -146,18 +146,19 @@ Colaborators:
 ## Object Detection
 * Faster RCNN :heavy_check_mark:
 
-Faster RCNN is one of the most widely used deep learning models for object detection. Although, its high-latency comparing to single-shot methods, Faster RCNN is performant detecting both small and large objects. The [authors](https://arxiv.org/abs/1506.01497) of this DL architecture divide the overall architecture into 2 modules, however, it is fairer to divide it into 3 modules:
+  Faster RCNN is one of the most widely used deep learning models for object detection. Although, its high-latency comparing to single-shot methods, Faster RCNN is performant detecting both small and large objects. The [authors](https://arxiv.org/abs/1506.01497) of this DL architecture divide the overall architecture into 2 modules, however, it is fairer to divide it into 3 modules:
 
-- feature extractor;
-- RPN (Region Proposals Network);
-- Fast RCNN detector;
+  - feature maps extractor;
+  - RPN (Region Proposals Network);
+  - Fast RCNN detector;
 
-The former is composed of a traditional classification architecture, which is responsible for producing feature maps. In our approach we choose a MobileNetV2 to perform this task due to its low-latency. After that, a small network slides over the feature maps predicting multiple possible proposals for each of its cells. This small network returns a lower-dimensional feature, which is then fed to two $1 \times 1$ convolutional layers. These layers yield the probability of a proposal bounding a target, and the coordinates encoding of each proposal, respectively. Finally, the features that correspond to objects pass through a ROI pooling layer that crops and re-scales each feature. During inference, the non-maximum suppresion (NMS) algorithm is computed to filter out the best-located bounding boxes.  
+  The former is composed of a traditional classification architecture, which is responsible for producing feature maps. In our approach we choose a MobileNetV2 to perform this task due to its low-latency. After that, a small network slides over the feature maps predicting multiple possible proposals for each of its cells. This small network returns a lower-dimensional feature, which is then fed to two 1 * 1 convolutional layers. These layers yield the probability of a proposal bounding a target, and the coordinates encoding of each proposal, respectively. Finally, the features that correspond to objects pass through a ROI pooling layer that crops and re-scales each feature. During inference, the non-maximum suppresion (NMS) algorithm is computed to filter out the best-located bounding boxes.  
 
-The work that we developed here in terms of training and model creation was based on the [torchvision](https://github.com/pytorch/vision/tree/master/torchvision) module of Pytorch framework.
+  The work that we developed here in terms of training and model creation was based on the [torchvision](https://github.com/pytorch/vision/tree/master/torchvision) module of Pytorch framework.
 
-Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2-Object_Detection/scripts)
-Visual results on our roads: [video1](https://www.youtube.com/watch?v=mNZJJlK3pHM&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=2) and [video2](https://www.youtube.com/watch?v=o7KSFDoEfW0&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=3)
+  Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2-Object_Detection/scripts)
+
+  Visual results on our roads: [video1](https://www.youtube.com/watch?v=mNZJJlK3pHM&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=2) and [video2](https://www.youtube.com/watch?v=o7KSFDoEfW0&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=3)
 
 * SSD :heavy_check_mark: 
 * YOLOV4 :x: 
