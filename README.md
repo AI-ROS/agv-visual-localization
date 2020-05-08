@@ -132,7 +132,7 @@ There is no bridge between ROS and Deepstream at the time of this repo. Therefor
 
 # Publications
 
-[Detection of Data Matrix Encoded Landmarks in Unstructured Environments using Deep Learning](https://www.researchgate.net/publication/341220437_Detection_of_Data_Matrix_Encoded_Landmarks_in_Unstructured_Environments_using_Deep_Learning)
+* [Detection of Data Matrix Encoded Landmarks in Unstructured Environments using Deep Learning](https://www.researchgate.net/publication/341220437_Detection_of_Data_Matrix_Encoded_Landmarks_in_Unstructured_Environments_using_Deep_Learning)
 
 # Current Work
 
@@ -163,7 +163,7 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
 
   Numeric results based on [COCO](http://cocodataset.org/#detection-eval) metrics for object detection models on the BDD100K validation set:
 
-  |       Metric             |  IoU Threshold  |  Scales  |  maxDets  | AP/AR values |
+  |       Metric             |  IoU Thresholds |  Scales  |  maxDets  | AP/AR values |
   | :----------------------: | :-------------: | :------: | :-------: | :----------: |
   | Average Precision  (AP)  |     0.50:0.95   |     all  |    100    |     0.193    |
   | Average Precision  (AP)  |     0.50        |     all  |    100    |     0.350    |
