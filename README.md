@@ -183,9 +183,9 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
 
 * **SSD** :heavy_check_mark:
 
-  Problems: Small Objects Detction
+  Problems: Small Objects Detection (due to the low resolution of the feature maps)
   Possible Solution: [Feature-Fused-SSD](https://github.com/wnzhyee/Feature-Fused-SSD)
-  
+
 * **YOLOV4** :x: 
 
 ## Semantic Segmentation
