@@ -181,7 +181,11 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
 
   Visual results on our roads: [video1](https://www.youtube.com/watch?v=mNZJJlK3pHM&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=2) and [video2](https://www.youtube.com/watch?v=o7KSFDoEfW0&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=3)
 
-* **SSD** :heavy_check_mark: 
+* **SSD** :heavy_check_mark:
+
+  Problems: Small Objects Detction
+  Possible Solution: [Feature-Fused-SSD](https://github.com/wnzhyee/Feature-Fused-SSD)
+  
 * **YOLOV4** :x: 
 
 ## Semantic Segmentation
