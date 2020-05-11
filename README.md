@@ -165,26 +165,45 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
 
   |       Metric             |  IoU Thresholds |  Scales  |  maxDets  | AP/AR values |
   | :----------------------: | :-------------: | :------: | :-------: | :----------: |
-  | Average Precision  (AP)  |     0.50:0.95   |     all  |    100    |     0.193    |
-  | Average Precision  (AP)  |     0.50        |     all  |    100    |     0.350    |
-  | Average Precision  (AP)  |     0.75        |     all  |    100    |     0.224    |
-  | Average Precision  (AP)  |     0.50:0.95   |   small  |    100    |     0.085    |
-  | Average Precision  (AP)  |     0.50:0.95   |  medium  |    100    |     0.683    |
-  | Average Precision  (AP)  |     0.50:0.95   |   large  |    100    |     1.000    |
-  | Average Recall     (AR)  |     0.50:0.95   |     all  |      1    |     0.035    |
-  | Average Recall     (AR)  |     0.50:0.95   |     all  |     10    |     0.189    |
-  | Average Recall     (AR)  |     0.50:0.95   |     all  |    100    |     0.212    |
-  | Average Recall     (AR)  |     0.50:0.95   |   small  |    100    |     0.117    |
-  | Average Recall     (AR)  |     0.50:0.95   |  medium  |    100    |     0.709    |
-  | Average Recall     (AR)  |     0.50:0.95   |   large  |    100    |     1.000    |
+  | Average Precision  (AP)  |     0.50:0.95   |     all  |    100    |     0.202    |
+  | Average Precision  (AP)  |     0.50        |     all  |    100    |     0.409    |
+  | Average Precision  (AP)  |     0.75        |     all  |    100    |     0.175    |
+  | Average Precision  (AP)  |     0.50:0.95   |   small  |    100    |     0.050    |
+  | Average Precision  (AP)  |     0.50:0.95   |  medium  |    100    |     0.243    |
+  | Average Precision  (AP)  |     0.50:0.95   |   large  |    100    |     0.432    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |      1    |     0.158    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |     10    |     0.277    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |    100    |     0.290    |
+  | Average Recall     (AR)  |     0.50:0.95   |   small  |    100    |     0.116    |
+  | Average Recall     (AR)  |     0.50:0.95   |  medium  |    100    |     0.355    |
+  | Average Recall     (AR)  |     0.50:0.95   |   large  |    100    |     0.519    |
 
 
-  Visual results on our roads: [video1](https://www.youtube.com/watch?v=mNZJJlK3pHM&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=2) and [video2](https://www.youtube.com/watch?v=o7KSFDoEfW0&list=PL8k82WSQRJKzByR54XnH0GdiGJPPpE-0Y&index=3)
+  Visual results on our roads: [video1](https://www.youtube.com/watch?v=mNZJJlK3pHM&t=1s) and [video2](https://www.youtube.com/watch?v=o7KSFDoEfW0&t=1s)
 
 * **SSD** :heavy_check_mark:
 
+  Numeric results on the BDD100K validation set:
+
+  |       Metric             |  IoU Thresholds |  Scales  |  maxDets  | AP/AR values |
+  | :----------------------: | :-------------: | :------: | :-------: | :----------: |
+  | Average Precision  (AP)  |     0.50:0.95   |     all  |    100    |     0.083    |
+  | Average Precision  (AP)  |     0.50        |     all  |    100    |     0.131    |
+  | Average Precision  (AP)  |     0.75        |     all  |    100    |     0.085    |
+  | Average Precision  (AP)  |     0.50:0.95   |   small  |    100    |     0.002    |
+  | Average Precision  (AP)  |     0.50:0.95   |  medium  |    100    |     0.044    |
+  | Average Precision  (AP)  |     0.50:0.95   |   large  |    100    |     0.293    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |      1    |     0.068    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |     10    |     0.093    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |    100    |     0.093    |
+  | Average Recall     (AR)  |     0.50:0.95   |   small  |    100    |     0.005    |
+  | Average Recall     (AR)  |     0.50:0.95   |  medium  |    100    |     0.052    |
+  | Average Recall     (AR)  |     0.50:0.95   |   large  |    100    |     0.334    |
+
+  Visual results on our roads: [video1](https://www.youtube.com/watch?v=DGnp-dfRaXU) and [video2](https://www.youtube.com/watch?v=cSvrMytWKd8)
+
   Problems: Small Objects Detection (due to the low resolution of the feature maps)
-  Possible Solution: [Feature-Fused-SSD](https://github.com/wnzhyee/Feature-Fused-SSD)
+  Possible Solution: [Feature-Fused-SSD](https://github.com/wnzhyee/Feature-Fused-SSD) or the usage of FPNs.
 
 * **YOLOV4** :x: 
 
