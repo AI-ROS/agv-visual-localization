@@ -183,6 +183,8 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
 
 * **SSD** :heavy_check_mark:
 
+  Single shot models can process the input faster due to the respective tasks - localization and classification - be done in a single forward fashion. Here, SSD is presented as well as its results in the validation set of the dataset used in this work. This architecture is characterized by its base network (or backbone), the usage of multi-scaled feature maps for the detection task, and the respective convolutional predictors. MobileNetV2 was used to perform the perception of high-level image features  and then was truncated before the classification layers. Hence, some of the final layers of MobileNet and additional feature layers allow predictions of detections at multiple scales. Each of these extra layers can produce a fixed set of detection predictions using a set of convolutional filters. Finally, the output of the model is the score for a category and the location of the box that bounds the target object.       
+
   Numeric results on the BDD100K validation set:
 
   |       Metric             |  IoU Thresholds |  Scales  |  maxDets  | AP/AR values |
@@ -199,6 +201,8 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
   | Average Recall     (AR)  |     0.50:0.95   |   small  |    100    |     0.005    |
   | Average Recall     (AR)  |     0.50:0.95   |  medium  |    100    |     0.052    |
   | Average Recall     (AR)  |     0.50:0.95   |   large  |    100    |     0.334    |
+
+  Although a huge difference between the numerical results for the validation set between the two architectures presented so far, this model is also performant on our roads. Please, check the videos below.
 
   Visual results on our roads: [video1](https://www.youtube.com/watch?v=DGnp-dfRaXU) and [video2](https://www.youtube.com/watch?v=cSvrMytWKd8)
 
