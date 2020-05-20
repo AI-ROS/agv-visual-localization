@@ -1,5 +1,5 @@
 # agv-visual-localization
-Core packages for the Produtech Project, where, initially, the objective is to build an AGV capable of getting its own localization based on Artificial Vision  (Under construction)
+Core packages for the Produtech Project, where, initially, the objective was to build an AGV capable of getting its localization based on Artificial Vision  (Under construction)
 
 # Table of Contents
 - [Overview](#overview)
@@ -26,8 +26,8 @@ Core packages for the Produtech Project, where, initially, the objective is to b
 
 # Overview
 
-One of the branches of the Produtech II SIF 24541 project is the T.6.3.3 - Development of a flexible and low-cost localization and navigation system for PPS6. So, the aim is to develop the core features of a visual-based navigation system. 
-The prototyping system is composed of a small robot controlled through a remote controller that emulates an industrial AGV, and a set of programs developed for this system. The localization system works by detecting a constellation of visual landmarks (the Data-Matrices) which encode their absolute position reference frame. The system is able to co-locate in this constellation of marked by application of triangulation and trilateration techniques.
+One of the branches of the Produtech II SIF 24541 project is the T.6.3.3 - Development of a flexible and low-cost localization and navigation system for PPS6. Therefore, the aim is to develop the core features of a visual-based navigation system. 
+The prototype  is composed of a small robot controlled through a remote controller that emulates an industrial AGV, and a set of programs developed for this system. The localization system works by detecting a constellation of visual landmarks (Data Matrix), which encode their absolute position in relation to a reference frame. The system is able to self-locate in this constellation of markers by applying triangulation and trilateration techniques.
 
 
 # Setup 
@@ -36,7 +36,7 @@ The setup of our robot is composed of two main parts: the hardware and the softw
 
 ## Hardware
 
-Here, the hardware parts and software modules used and developed during this project are described.
+Here, the hardware parts used and developed during this project are described.
 
 ### Robot
 
@@ -53,11 +53,11 @@ It is not possible to show an image of the final setup but some of the new hardw
 
 |       Name        |                             Description/Function                             |
 | :---------------: | :--------------------------------------------------------------------------: |
-|  DC/AC Inversor   |                 Input 48 V, Output: AC. To power the Jetson.                 |
-|  DC/DC Inversor   |                Input 12 V, Output: 5V. To power the Arduino.                 |
+|  DC/AC Inversor   |                 Input 48 V, Output: AC; To power the Jetson                  |
+|  DC/DC Inversor   |                Input 12 V, Output: 5V; To power the Arduino                  |
 |      Arduino      | To perform the communication between the remote controller and the AC motor. |
-| Jetson AGX Xavier |  To perform the DL computation and to ensure the ROS architecture running.   |
-|   Four Cameras    |                               To acquire data.                               |
+| Jetson AGX Xavier |  To perform DL computation and to ensure the ROS architecture running.       |
+|   Four Cameras    |                               To acquire image data.                         |
 
 ### Cameras
 
@@ -72,7 +72,7 @@ The [e-CAM130_CUXVR - Multiple Camera Board](https://www.e-consystems.com/nvidia
 
 ### Jetson AGX Xavier
 
-This board enables the creation of AI applications mainly based on Deep Learning by incorporating 512-core Volta GPU with Tensor Cores and (2x) NVDLA Engines. The NVIDIA [Jetpack 4.2](https://developer.nvidia.com/jetpack-4_2) and the [DeepStream SDK 4.0](https://docs.nvidia.com/metropolis/deepstream/4.0/dev-guide/DeepStream_Development_Guide/baggage/index.html) were installed in this board to provide the software SDK required for this project (for example, the OpenCV library).
+This board enables the creation of AI applications mainly based on Deep Learning by incorporating 512-core Volta GPU with Tensor Cores and (2x) NVDLA Engines. The NVIDIA [Jetpack 4.2](https://developer.nvidia.com/jetpack-4_2) and the [DeepStream SDK 4.0](https://docs.nvidia.com/metropolis/deepstream/4.0/dev-guide/DeepStream_Development_Guide/baggage/index.html) were installed in this board to provide the software SDK required for this project.
 
 ## Software
 
