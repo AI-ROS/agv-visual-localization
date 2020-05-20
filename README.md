@@ -209,6 +209,14 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
   Problems: Small Objects Detection (due to the low resolution of the feature maps)
   Possible Solution: [Feature-Fused-SSD](https://github.com/wnzhyee/Feature-Fused-SSD) or the usage of FPNs.
 
+* **YOLOV3** :heavy_check_mark:
+
+  All YOLO architectures are also single-shot methods, and that is why they achieve high-speed predictions. The authors have been presenting several evolutions which is reflected in the amount of YOLO versions that exist - 4 until the writing date of this README file (YOLO, YOLOv2, YOLOv3, and YOLOv4). This architecture has always shown low-latency and, therefore what has been worked on along the various versions is the localization performance. 
+  
+  Contrary to the previous architectures presented, YOLO has a custom features extractor - DarkNet. This backbone can have different layouts, but the most common one is DarkNet53 (from the third version of YOLO), which is 93.8% accurate on ImageNet test set (Top-5). Thus, v3 makes detections at three different scales by applying 1 * 1 kernels on those features maps at three different stages of the network. 
+
+
+
 * **YOLOV4** :x: 
 
 ## Semantic Segmentation
