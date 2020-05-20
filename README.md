@@ -213,12 +213,12 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
 
   All YOLO architectures are also single-shot methods, and that is why they achieve high-speed predictions. The authors have been presenting several evolutions which is reflected in the amount of YOLO versions that exist - 4 until the writing date of this README file (YOLO, YOLOv2, YOLOv3, and YOLOv4). This architecture has always shown low-latency and, therefore what has been the focus on along the various versions is the localization performance. 
   
-  Contrary to the previous architectures presented, YOLO has a custom features extractor - [Darknet](https://pjreddie.com/darknet/). This backbone can have different layouts, but the most common one is Darknet53 (from the third version of YOLO), which is 93.8% accurate on ImageNet test set (Top-5). Thus, v3 makes detections at three different scales by applying 1 * 1 kernels on those features maps at three different stages of the network:
-   * the first detection is made by the 82nd layer (stride of 32).In our case, the input image has a size of 416 * 416, which means that the final detection feature map has a size of 13 * 13 * 45 (the number of channels is given by B * (5 + C), where B is the number of bounding boxes that a cell on the feature map can predict - 3; 5 is related to object confidence, and the four values that determine the bounding box location; finally, C is the number of classes - 10 for BDD100K);
+  Contrary to the previous architectures presented, YOLO has a custom features extractor - [Darknet](https://pjreddie.com/darknet/). This architecture can have different layouts, but the most common one is Darknet53 (from the third version of YOLO), which is 93.8% accurate on ImageNet test set (Top-5). Thus, v3 makes detections at three different scales by applying 1 * 1 kernels on those features maps at three different stages of the network:
+   * the first detection is made by the 82nd layer (stride of 32). In our case, the input image has a size of 416 * 416, which means that the final detection feature map has a size of 13 * 13 * 45 (the number of channels is given by B * (5 + C), where B is the number of bounding boxes that a cell on the feature map can predict - 3; 5 is related to the object confidence, and the four values that determine the bounding box location; finally, C is the number of classes - 10 for BDD100K);
    * the second detection is made by the 94th layer, yielding a detection feature map of 26 * 26 * 45 (stride of 16);
    * finally, the last detection is made by the 106th layer, giving rise to a feature map of 52 * 52 * 45 (stride of 8);
 
-   This last detection layer helped to improve small objects detection due to a higher resolution feature map.   
+   This last detection layer helped to improve small objects detection due to a higher resolution feature map (major problem in previous Yolo versions).   
 
 
 
