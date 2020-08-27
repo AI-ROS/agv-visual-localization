@@ -18,9 +18,11 @@ Core packages for the Produtech Project, where, initially, the objective was to 
 - [Known problems](#known-problems)
   * [High latency on the panorama image creation](#high-latency-on-the-panorama-image-creation)
   * [Lack of Deepstream-ROS interaction](#lack-of-deepstream-ros-interaction)
-- [Publications](#publications)
 - [Current Work](#current-work)
-  * [Object Detection](#object-detection)
+  * [Road Object Detection](#road-object-detection)
+  * [Data Matrix Detection](#data-matrix-detection)
+- [Publications](#publications)
+
 
 
 # Overview
@@ -129,10 +131,6 @@ Since the package developed w.r.t the panorama image creation uses [warp transfo
 
 There is no bridge between ROS and Deepstream at the time of this repo. Therefore, the construction of an entire architecture (e.g. autonomous vehicle) is difficult to achieve (because an autonomous vehicle is not based solely on video analytics). However, [jetson-inference](https://github.com/dusty-nv/jetson-inference) is a library with several deep-learning inference networks with TensorRT to deploy in the NVIDIA Jeston platform. These models can be used as [DL inference nodes](https://github.com/dusty-nv/ros_deep_learning).
 
-# Publications
-
-* [Detection of Data Matrix Encoded Landmarks in Unstructured Environments using Deep Learning](https://www.researchgate.net/publication/341220437_Detection_of_Data_Matrix_Encoded_Landmarks_in_Unstructured_Environments_using_Deep_Learning)
-
 # Current Work
 
 The COVID-19 pandemic brought this work to a halt (due to the impossibility of contact with the robot), but enabled the development of another type of research on the field of autonomous driving (and connected with the AGV system). So, this work will be extended to autonomous driving applications. The visual perception of road agents/objects, based on DL ROS nodes, is going to be developed soon. Mainly, the two crucial objectives are to deploy a unified representation of the road/lanes segmentation and object detection.
@@ -142,7 +140,7 @@ Colaborators:
 * Object Detction: [tmralmeida](https://github.com/tmralmeida) 
 * Semantic Segmentation: [bernardomig](https://github.com/bernardomig) 
 
-## Object Detection
+## Road Object Detection
 
 The object detection models deployed in this project were trained on the [BDD100k](https://bair.berkeley.edu/blog/2018/05/30/bdd/) dataset. Several developers have already implemented these models, so what is presented here are approaches based on those developed by these authors.
 
@@ -243,5 +241,11 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
     | Average Recall     (AR)  |     0.50:0.95   |   large  |    100    |     0.511    |
 
     Visual results on our roads on the Nvidia AGX Xavier device: [video1](https://www.youtube.com/watch?v=63p3GyR8JPw) 
+    
+## Data Matrix Detection
 
+For this content, please follow this [REPO](https://github.com/lardemua/data-matrix-detection-benchmark).
 
+# Publications
+
+* [Detection of Data Matrix Encoded Landmarks in Unstructured Environments using Deep Learning](https://www.researchgate.net/publication/341220437_Detection_of_Data_Matrix_Encoded_Landmarks_in_Unstructured_Environments_using_Deep_Learning)
