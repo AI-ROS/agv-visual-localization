@@ -21,7 +21,6 @@ Core packages for the Produtech Project, where, initially, the objective was to 
 - [Publications](#publications)
 - [Current Work](#current-work)
   * [Object Detection](#object-detection)
-  * [Semantic Segmentation](#semantic-segmentation)
 
 
 # Overview
@@ -207,7 +206,7 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
   Visual results on our roads: [video1](https://www.youtube.com/watch?v=DGnp-dfRaXU) and [video2](https://www.youtube.com/watch?v=cSvrMytWKd8)
 
   Problems: Small Objects Detection (due to the low resolution of the feature maps)
-  Possible Solution: [Feature-Fused-SSD](https://github.com/wnzhyee/Feature-Fused-SSD) or the usage of FPNs.
+  Possible Solution: [Feature-Fused-SSD](https://github.com/wnzhyee/Feature-Fused-SSD).
 
 * **YOLOV3** :heavy_check_mark:
 
@@ -222,6 +221,27 @@ Resources: [REPO](https://github.com/tmralmeida/bag-of-models/tree/master/CNNs/2
 
 
 
-* **YOLOV4** :x: 
+* **YOLOV4** :heavy_check_mark: 
 
-## Semantic Segmentation
+YOLOv4 is composed of a Cross Stage Partial (CSP) Darknet53 with an SPP module, a path-aggregation net (PANet), and a YOLOv3 head. CSP networks have similar basis and purposes to a DenseNet. Therefore, this type of architectures enhances the features reuse by reducing the amount of repeated gradient information observed in a DenseNet. To do so, it divides the base feature map, then a part of the channels passes through a partial dense block and the other part undergoes to the final partial transition layer. After activation maps production, the only difference between YOLOv3 and YOLOv4 in terms of architecture's layout is the global features concatenation. Instead of the FPN technique, a custom PANet approach is performed. PANet is simply an enhanced version of FPN; after the FPN's block composed of a top-down pathway with lateral connections, PANet also propagates low-level features through a bottom-up path augmentation block. This block allows the addition (concatenation for YOLOv4) of the FPN resulting features with the output of those feature maps with 3*3 convolutions, which yields an even better understanding of the low-level features. 
+
+Numeric results on the BDD100K validation set:
+
+  |       Metric             |  IoU Thresholds |  Scales  |  maxDets  | AP/AR values |
+  | :----------------------: | :-------------: | :------: | :-------: | :----------: |
+  | Average Precision  (AP)  |     0.50:0.95   |     all  |    100    |     0.105    |
+  | Average Precision  (AP)  |     0.50        |     all  |    100    |     0.209    |
+  | Average Precision  (AP)  |     0.75        |     all  |    100    |     0.092    |
+  | Average Precision  (AP)  |     0.50:0.95   |   small  |    100    |     0.053    |
+  | Average Precision  (AP)  |     0.50:0.95   |  medium  |    100    |     0.223    |
+  | Average Precision  (AP)  |     0.50:0.95   |   large  |    100    |     0.326    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |      1    |     0.107    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |     10    |     0.220    |
+  | Average Recall     (AR)  |     0.50:0.95   |     all  |    100    |     0.257    |
+  | Average Recall     (AR)  |     0.50:0.95   |   small  |    100    |     0.187    |
+  | Average Recall     (AR)  |     0.50:0.95   |  medium  |    100    |     0.467    |
+  | Average Recall     (AR)  |     0.50:0.95   |   large  |    100    |     0.511    |
+
+  Visual results on our roads on the Nvidia AGX Xavier device: [video1](https://www.youtube.com/watch?v=63p3GyR8JPw) 
+
+
